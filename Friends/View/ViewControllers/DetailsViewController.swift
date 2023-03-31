@@ -30,9 +30,9 @@ class DetailsViewController: UIViewController, MFMailComposeViewControllerDelega
         nameLbl.text = friendList.results[indx].name.title  + " " + friendList.results[indx].name.first + " " +
         friendList.results[indx].name.last
         
-        addressLbl.text = friendList.results[indx].location.street.name + "," + "\(friendList.results[indx].location.street.number)" + ", " + friendList.results[indx].location.country
+        addressLbl.text = friendList.results[indx].location.street.name + "," + "\(friendList.results[indx].location.street.number)" + ", " + friendList.results[indx].location.city + ", "+friendList.results[indx].location.country
         
-        cityLbl.text = friendList.results[indx].location.city + " " +  friendList.results[indx].location.state + " " +  friendList.results[indx].location.country
+        cityLbl.text = friendList.results[indx].location.city + ", " +  friendList.results[indx].location.state + ", " +  friendList.results[indx].location.country
         
         cellPhoneLbl.text = friendList.results[indx].cell
         
